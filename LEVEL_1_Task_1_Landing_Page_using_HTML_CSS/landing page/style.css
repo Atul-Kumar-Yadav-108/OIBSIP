@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)), url(./image/16545.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    color: white;
+}
+
+.header-line{
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-line div{
+    margin-top: 40px;
+}
+
+.header-line .menu-item{
+    word-spacing: 1rem;
+}
+
+a{
+    text-decoration: none;
+    color: whitesmoke;
+    letter-spacing: 0.05rem;
+    text-transform: capitalize;
+}
+
+.logo{
+    font-size: 1.8rem;
+    font-weight: bold;
+    word-spacing: 0.5rem;
+    letter-spacing: 0.09rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(255, 168, 80);
+}
+
+.menu-item a{
+    position: relative;
+}
+
+.menu-item a::before{
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-bottom:2px solid indianred;
+    transition: 0.4s linear;
+  
+}
+
+.menu-item a:hover::before{
+
+    width: 90%;
+}
+
+
+.register a{
+    padding: 10px 20px;
+    background-color: indianred;
+    font-size: larger;
+    font-weight: bolder;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+.register :hover{
+    background-color: transparent;
+    border: 2px solid indianred;
+}
+
+
+/* header text section */
+
+.header-text
+{
+    max-width: 650px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.header-text span{
+    margin-bottom: 1rem;
+    font-style: italic;
+    letter-spacing: 0.05rem;
+    
+}
+
+.header-text h1{
+    margin-top: 1.5rem;
+    margin-bottom: 2.5rem;
+    color:rgb(255, 221, 0);
+    background-color: rgba(0,0,0. 0.8);
+}
+
+
+.header-text a{
+    padding: 15px 30px;
+    background-color: white;
+    color: black;
+    text-shadow: 0 20px 0 rgbs(0,0,0,0.5);
+    font-weight: bolder;
+    font-size: 1.3rem;
+    border-radius: 3px;
+    transition: 0.4s;
+}
+
+.header-text a:hover{
+    border: 2px solid white;   
+    background-color: transparent;
+    color: white;
+}
+
+/* body-content section */
+
+.body-content{
+    width: 100%;
+    height: 75vh;
+    background-color: rgba(0,0,0,0.4)
+}
+
+.body-content .body-rows{
+    padding-top: 5%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.body-content .body-rows .services{
+    max-width: 400px;
+    max-width: 600px;
+    background-color: lightcyan;
+
+}
+
+.body-content .body-rows a{
+    justify-content: center;
+    padding: 10px 97px;
+    background-color: indianred;
+    color: black; 
+    font-weight: bolder; 
+    font-size: medium;
+}
+
+.body-content .body-rows .services a:hover{
+    background-color: black;
+    color: white;
+
+}
+
+.body-content h1{
+    text-align: center;
+}
+
+/* footer section */
+
+.footer-sec{
+    background-color: rgba(0,0,0,0.8);
+    width: 100%;
+    height: 40vh;
+    position: relative;
+}
+
+
+
+.footer-sec .rows{
+    padding-top: 3%;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+
+.footer-sec li{
+    margin-bottom: 5px;
+}
+
+
+.footer-sec a{
+    position: relative;
+}
+
+.footer-sec a::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    top: 0;
+    bottom: 0;
+    border-bottom: 2px solid white;
+    transition: 0.4s linear;
+}
+
+.footer-sec a:hover::before{
+    width: 90%;
+}
+
+
+.footer-sec .social-media 
+{
+    position: absolute;
+    align-content: space-around;
+    top: 60%;
+    left: 40%;
+    width: 50%;
+    height: 10%;
+}
+
+.footer-sec .social-media a{
+    margin-left: 2rem;
+}
+
+.footer-sec .right-sec{
+    color: white;
+    position: absolute;
+    bottom:2%;
+    left:40%;
+
+    
+}
